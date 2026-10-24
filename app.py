@@ -28,12 +28,12 @@ def build_page() -> str:
     return html
 
 
-st.set_page_config(page_title="Sakhi Health", page_icon="🌸", layout="centered")
+st.set_page_config(page_title="Sakhi Health", page_icon="🌸", layout="wide")
 st.markdown(
     """
     <style>
       #MainMenu, footer, header {visibility: hidden;}
-      .block-container {padding-top: 0.5rem; padding-bottom: 0; max-width: 820px;}
+      .block-container {padding-top: 0.5rem; padding-bottom: 0; max-width: 100%;}
     </style>
     """,
     unsafe_allow_html=True,
