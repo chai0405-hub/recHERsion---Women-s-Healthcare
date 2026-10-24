@@ -33,13 +33,13 @@ st.markdown(
     """
     <style>
       #MainMenu, footer, header {visibility: hidden;}
-      .block-container {padding-top: 0.5rem; padding-bottom: 0; max-width: 100%;}
+      .block-container {padding: 0.5rem 0 0 0; max-width: 100%;}
     </style>
     """,
     unsafe_allow_html=True,
 )
 
-components.html(build_page(), height=1400, scrolling=True)
+components.html(build_page(), height=1100, scrolling=True)
 st.caption(
     "Sakhi Health is not a medical device and does not diagnose. Your entries stay "
     "in this browser; nothing is sent to the server."

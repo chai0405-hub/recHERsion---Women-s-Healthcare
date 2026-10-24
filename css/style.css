@@ -95,9 +95,9 @@ button,.chip{min-height:40px}
 .why{font-size:0.9375rem;background:var(--soft);border-radius:12px;padding:10px 12px}
 .bsyms{display:grid;grid-template-columns:1fr;gap:6px;margin:6px 0}.bsym{display:flex;justify-content:space-between;align-items:center;gap:8px;border-bottom:1px dashed var(--line);padding:4px 0}.bsym label{margin:0;font-weight:400}select{padding:6px 8px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);font:inherit}
 
-/* Desktop: use the width instead of a phone-sized column */
+/* Desktop: fill the whole width instead of a phone-sized column */
 @media (min-width:1000px){
-  main{max-width:1040px;padding:24px 28px 60px}
-  nav{max-width:1040px;margin:0 auto}
+  main{max-width:none;padding:24px clamp(28px,4vw,72px) 60px}
+  nav{max-width:none;margin:0;padding-left:clamp(28px,4vw,72px);padding-right:clamp(28px,4vw,72px)}
   .auth{max-width:460px}
 }
