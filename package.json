@@ -1,0 +1,12 @@
+{
+  "name": "sakhi-health",
+  "version": "1.0.0",
+  "description": "Privacy-first women's health symptom tracker with transparent pattern checks and a doctor-ready summary (English + Kannada).",
+  "private": true,
+  "scripts": {
+    "test": "node tests/run-tests.js",
+    "start": "python3 -m http.server 8000"
+  },
+  "author": "Chaitanya Pawar",
+  "license": "MIT"
+}
